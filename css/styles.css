@@ -1,0 +1,79 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  background-color: #110a11;
+  color: #be896f;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+/* HEADING + DESCRIPTION */
+
+h1 {
+}
+
+.description {
+  width: 60vw;
+  max-width: 700px;
+  min-width: 350px;
+}
+
+/* FORM */
+
+form {
+  width: 60vw;
+  max-width: 700px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid #2c2f3a;
+}
+
+.hint {
+  text-align: left;
+}
+
+.form-question {
+  text-align: left;
+}
+.gender {
+  display: inline-block;
+}
+
+input,
+textarea,
+select {
+  background-color: #e0b99a;
+  color: #110a11;
+}
+
+::placeholder {
+  color: #110a11;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  accent-color: #5a87a1;
+}
+
+/* BOTTONS */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #5a87a1;
+  color: #110a11;
+}
