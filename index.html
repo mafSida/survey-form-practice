@@ -20,14 +20,61 @@
       <!-- ABOUT YOU SECTION -->
       <fieldset class="about-you">
         <legend>About you</legend>
-        <label for=""></label>
-        <input id="" type="" />
-        <label for=""></label>
-        <input id="" type="" />
-        <label for=""></label>
-        <input id="" type="" />
-        <label for=""></label>
-        <input id="" type="" />
+        <p class="hint">
+          Plese share a few basic details so we can better interpret results.
+        </p>
+        <div class="form-group">
+          <label for="age">Age: </label>
+          <input
+            id="age"
+            name="age"
+            type="number"
+            min="18"
+            max="99"
+            step="1"
+            required
+          />
+        </div>
+        <p class="gender">Gender:</p>
+        <div class="form-group">
+          <input id="male" name="gender" type="radio" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div class="form-group">
+          <input id="female" name="gender" type="radio" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <div class="form-group">
+          <input
+            id="non-binary"
+            name="gender"
+            type="radio"
+            value="non-binary"
+          />
+          <label for="non-binary">Non-binary</label>
+        </div>
+        <div class="form-group">
+          <input
+            id="prefer-not-to-say"
+            name="gender"
+            type="radio"
+            value="prefer-not-to-say"
+            checked
+          />
+          <label for="prefer-not-to-say">Prefer not to say </label>
+        </div>
+        <div class="form-group">
+          <label for="region">Region: </label>
+          <select id="region" name="region" required>
+            <option value="">Choose your region</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+            <option value="north-america">North America</option>
+            <option value="oceania-australia">Oceania / Australia</option>
+            <option value="middle-east">Middle East</option>
+          </select>
+        </div>
       </fieldset>
       <!-- WORK & LIFESTILE SECTION -->
       <fieldset class="work-lifestyle">
