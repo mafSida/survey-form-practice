@@ -148,12 +148,71 @@
       <fieldset>
         <!-- WELL-BEING SECTION -->
         <legend class="well-being">Mental & Physical Well-being</legend>
-        <label for=""></label>
-        <input id="" type="" />
-        <label for=""></label>
-        <input id="" type="" />
-        <label for=""></label>
-        <input id="" type="" />
+        <p class="hint">
+          This section focuses on how technology affects your energy and focus.
+        </p>
+
+        <div class="form-group">
+          <label for=""
+            >How whould you rate your current energy level during the
+            workday?</label
+          >
+          <input
+            id="energy-rate"
+            name="energy-rate"
+            type="range"
+            min="1"
+            max="10"
+            step="1"
+          />
+        </div>
+
+        <p>Do you experience symptoms of digital fatigue?</p>
+
+        <div class="form-group">
+          <label for="">Eye strain</label>
+          <input
+            id="eye-strain"
+            name="symptoms"
+            type="checkbox"
+            value="eye-strain"
+          />
+        </div>
+        <div class="form-group">
+          <label for="headaches"></label>
+          <input
+            id="headaches"
+            name="symptoms"
+            type="checkbox"
+            value="headaches"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Insomnia</label>
+          <input
+            id="insomnia"
+            name="symptoms"
+            type="checkbox"
+            value="insomnia"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Anxiety </label>
+          <input id="anxiety" name="anxiety" type="checkbox" value="" />
+        </div>
+        <div class="form-group">
+          <label for="">None</label>
+          <input id="none" name="none" type="checkbox" value="" checked />
+        </div>
+
+        <div class="form-group">
+          <label for="help">What helps you recover or relax after work?</label>
+          <textarea
+            id="help"
+            name="help"
+            placeholder="Share your ways with us."
+          ></textarea>
+        </div>
       </fieldset>
       <fieldset>
         <!-- PREFERENCES SECTION -->
