@@ -32,48 +32,55 @@
           Plese share a few basic details so we can better interpret results.
         </p>
 
-        <p class="form-question gender">Gender:</p>
-
-        <input id="male" name="gender" type="radio" value="male" />
-        <label for="male">Male</label>
-
-        <input id="female" name="gender" type="radio" value="female" />
-        <label for="female">Female</label>
-
-        <input id="non-binary" name="gender" type="radio" value="non-binary" />
-        <label for="non-binary">Non-binary</label>
-
-        <input
-          id="prefer-not-to-say"
-          name="gender"
-          type="radio"
-          value="prefer-not-to-say"
-          checked
-        />
-        <label for="prefer-not-to-say">Prefer not to say </label>
+        <div class="form-group">
+          <p class="form-question">Gender:</p>
+          <input id="male" name="gender" type="radio" value="male" />
+          <label for="male">Male</label>
+          <input id="female" name="gender" type="radio" value="female" />
+          <label for="female">Female</label>
+          <input
+            id="non-binary"
+            name="gender"
+            type="radio"
+            value="non-binary"
+          />
+          <label for="non-binary">Non-binary</label>
+          <input
+            id="prefer-not-to-say"
+            name="gender"
+            type="radio"
+            value="prefer-not-to-say"
+            checked
+          />
+          <label for="prefer-not-to-say">Prefer not to say </label>
+        </div>
 
         <div class="form-group">
-          <label for="age">Age: </label>
-          <input
-            id="age"
-            name="age"
-            type="number"
-            min="18"
-            max="99"
-            step="1"
-            required
-          />
+          <div class="set">
+            <label for="age">Age: </label>
+            <input
+              id="age"
+              name="age"
+              type="number"
+              min="18"
+              max="99"
+              step="1"
+              required
+            />
+          </div>
 
-          <label for="region">Region: </label>
-          <select id="region" name="region" required>
-            <option value="">Choose your region</option>
-            <option value="europe">Europe</option>
-            <option value="asia">Asia</option>
-            <option value="africa">Africa</option>
-            <option value="north-america">North America</option>
-            <option value="oceania-australia">Oceania / Australia</option>
-            <option value="middle-east">Middle East</option>
-          </select>
+          <div class="region set">
+            <label for="region">Region: </label>
+            <select id="region" name="region" required>
+              <option value="">Choose your region</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="north-america">North America</option>
+              <option value="oceania-australia">Oceania / Australia</option>
+              <option value="middle-east">Middle East</option>
+            </select>
+          </div>
         </div>
       </fieldset>
       <!-- WORK & LIFESTILE SECTION -->
@@ -83,57 +90,59 @@
           Tell us a bit about your work setup and daily routine
         </p>
 
-        <label for="occupation">Occupation</label>
-        <select id="occupation" name="occupation" required>
-          <option value="">Choose your occupation</option>
-          <option value="student">Student</option>
-          <option value="freelancer">Freelancer</option>
-          <option value="full-time">Full-time employee</option>
-          <option value="part-time">Part-time employee</option>
-          <option value="unemloyed">Unemployed</option>
-          <option value="other">Other</option>
-        </select>
+        <div class="form-group occupation">
+          <label for="occupation">Occupation:</label>
+          <select id="occupation" name="occupation" required>
+            <option value="">Choose your occupation</option>
+            <option value="student">Student</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="full-time">Full-time employee</option>
+            <option value="part-time">Part-time employee</option>
+            <option value="unemloyed">Unemployed</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-        <label for="screen-hours"
-          >How many hours per day do you spend in front of a screen?</label
-        >
-        <input
-          id="screen-hours"
-          name="screen-hours"
-          type="number"
-          min="1"
-          max="16"
-        />
+        <div class="form-group">
+          <label for="screen-hours"
+            >How many hours per day do you spend in front of a screen?</label
+          >
+          <input
+            id="screen-hours"
+            name="screen-hours"
+            type="number"
+            min="1"
+            max="16"
+          />
+        </div>
 
-        <p class="form-question">Which devices do you use the most?</p>
-        <label for="laptop">Laptop</label>
-        <input id="laptop" name="device" type="checkbox" />
+        <div class="form-group device">
+          <p class="form-question device">Which devices do you use the most?</p>
+          <input id="laptop" name="device" type="checkbox" />
+          <label for="laptop">Laptop</label>
+          <input id="smartphone" name="device" type="checkbox" />
+          <label for="smartphone">Smartphone</label>
+          <input id="tablet" name="device" type="checkbox" />
+          <label for="tablet">Tablet</label>
+          <input id="desktop" name="device" type="checkbox" />
+          <label for="desktop">Desktop</label>
+          <input id="smartwatch" name="device" type="checkbox" />
+          <label for="smartwatch">Smartwatch</label>
+        </div>
 
-        <label for="smartphone">Smartphone</label>
-        <input id="smartphone" name="device" type="checkbox" />
-
-        <label for="tablet">Tablet</label>
-        <input id="tablet" name="device" type="checkbox" />
-
-        <label for="desktop">Desktop</label>
-        <input id="desktop" name="device" type="checkbox" />
-
-        <label for="smartwatch">Smartwatch</label>
-        <input id="smartwatch" name="device" type="checkbox" />
-
-        <p class="form-question">How often do you take breaks from screens?</p>
-
-        <label for="every-hour">Every hour</label>
-        <input id="every-hour" name="breaks" type="radio" />
-
-        <label for="every-few-hours">Every few hours</label>
-        <input id="every-few-hours" name="breaks" type="radio" />
-
-        <label for="rarely">Rarely</label>
-        <input id="rarely" name="breaks" type="radio" />
-
-        <label for="almost-never">Almost never</label>
-        <input id="almost-never" name="breaks" type="radio" />
+        <div class="form-group screen-breaks">
+          <p class="form-question screen-breaks">
+            How often do you take breaks from screens?
+          </p>
+          <input id="every-hour" name="breaks" type="radio" />
+          <label for="every-hour">Every hour</label>
+          <input id="every-few-hours" name="breaks" type="radio" />
+          <label for="every-few-hours">Every few hours</label>
+          <input id="rarely" name="breaks" type="radio" />
+          <label for="rarely">Rarely</label>
+          <input id="almost-never" name="breaks" type="radio" />
+          <label for="almost-never">Almost never</label>
+        </div>
       </fieldset>
       <!-- WELL-BEING SECTION -->
       <fieldset>
@@ -143,7 +152,7 @@
         </p>
 
         <div class="form-group">
-          <label for=""
+          <label for="energy-rate"
             >How whould you rate your current energy level during the
             workday?</label
           >
@@ -157,11 +166,10 @@
           />
         </div>
 
-        <p class="form-question">
-          Do you experience symptoms of digital fatigue?
-        </p>
-
         <div class="form-group">
+          <p class="form-question">
+            Do you experience symptoms of digital fatigue?
+          </p>
           <label for="">Eye strain</label>
           <input
             id="eye-strain"
@@ -169,8 +177,7 @@
             type="checkbox"
             value="eye-strain"
           />
-        </div>
-        <div class="form-group">
+
           <label for="headaches"></label>
           <input
             id="headaches"
@@ -178,8 +185,7 @@
             type="checkbox"
             value="headaches"
           />
-        </div>
-        <div class="form-group">
+
           <label for="">Insomnia</label>
           <input
             id="insomnia"
@@ -187,12 +193,10 @@
             type="checkbox"
             value="insomnia"
           />
-        </div>
-        <div class="form-group">
+
           <label for="">Anxiety </label>
           <input id="anxiety" name="anxiety" type="checkbox" value="" />
-        </div>
-        <div class="form-group">
+
           <label for="">None</label>
           <input id="none" name="none" type="checkbox" value="" checked />
         </div>

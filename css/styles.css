@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -25,6 +27,10 @@ h1 {
   min-width: 350px;
 }
 
+.time-matter {
+  margin-bottom: 15px;
+}
+
 /* FORM */
 
 form {
@@ -36,6 +42,20 @@ form {
 
 fieldset {
   border: 1px solid #2c2f3a;
+  padding: 0 24px 12px;
+  margin-bottom: 24px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-group {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hint {
@@ -44,9 +64,7 @@ fieldset {
 
 .form-question {
   text-align: left;
-}
-.gender {
-  display: inline-block;
+  margin: 0 16px 0 0;
 }
 
 input,
@@ -54,16 +72,46 @@ textarea,
 select {
   background-color: #e0b99a;
   color: #110a11;
+  margin: 1em 0;
 }
 
 ::placeholder {
   color: #110a11;
 }
 
+label {
+  margin-right: 16px;
+}
+
 input[type="checkbox"],
 input[type="radio"],
 input[type="range"] {
   accent-color: #5a87a1;
+  margin-right: 4px;
+}
+
+/* WORK AND LIFESTYLE */
+
+.form-group.occupation {
+  justify-content: start;
+}
+
+.form-group.device {
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.form-question.device {
+  flex-basis: 100%;
+}
+
+.form-group.screen-breaks {
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.form-question.screen-breaks {
+  flex-basis: 100%;
 }
 
 /* BOTTONS */
