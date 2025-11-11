@@ -29,7 +29,7 @@
         <legend>About you</legend>
 
         <p class="hint">
-          Plese share a few basic details so we can better interpret results.
+          Please share a few basic details so we can better interpret results.
         </p>
 
         <div class="form-group">
@@ -62,6 +62,7 @@
               id="age"
               name="age"
               type="number"
+              inputmode="numeric"
               min="18"
               max="99"
               step="1"
@@ -69,7 +70,7 @@
             />
           </div>
 
-          <div class="region set">
+          <div class="set">
             <label for="region">Region: </label>
             <select id="region" name="region" required>
               <option value="">Choose your region</option>
@@ -83,7 +84,7 @@
           </div>
         </div>
       </fieldset>
-      <!-- WORK & LIFESTILE SECTION -->
+      <!-- WORK & LIFESTYLE SECTION -->
       <fieldset class="work-lifestyle">
         <legend>Work & Lifestyle</legend>
         <p class="hint">
@@ -98,7 +99,7 @@
             <option value="freelancer">Freelancer</option>
             <option value="full-time">Full-time employee</option>
             <option value="part-time">Part-time employee</option>
-            <option value="unemloyed">Unemployed</option>
+            <option value="unemployed">Unemployed</option>
             <option value="other">Other</option>
           </select>
         </div>
@@ -118,15 +119,25 @@
 
         <div class="form-group device">
           <p class="form-question device">Which devices do you use the most?</p>
-          <input id="laptop" name="device" type="checkbox" />
+          <input id="laptop" name="device" type="checkbox" value="laptop" />
           <label for="laptop">Laptop</label>
-          <input id="smartphone" name="device" type="checkbox" />
+          <input
+            id="smartphone"
+            name="device"
+            type="checkbox"
+            value="smartphone"
+          />
           <label for="smartphone">Smartphone</label>
-          <input id="tablet" name="device" type="checkbox" />
+          <input id="tablet" name="device" type="checkbox" value="tablet" />
           <label for="tablet">Tablet</label>
-          <input id="desktop" name="device" type="checkbox" />
+          <input id="desktop" name="device" type="checkbox" value="desktop" />
           <label for="desktop">Desktop</label>
-          <input id="smartwatch" name="device" type="checkbox" />
+          <input
+            id="smartwatch"
+            name="device"
+            type="checkbox"
+            value="smartwatch"
+          />
           <label for="smartwatch">Smartwatch</label>
         </div>
 
@@ -146,14 +157,14 @@
       </fieldset>
       <!-- WELL-BEING SECTION -->
       <fieldset>
-        <legend class="well-being">Mental & Physical Well-being</legend>
+        <legend class="well-being">Mental & Physical Well-Being</legend>
         <p class="hint">
           This section focuses on how technology affects your energy and focus.
         </p>
 
         <div class="form-group well-being">
           <label class="energy-rate" for="energy-rate"
-            >How whould you rate your current energy level during the
+            >How would you rate your current energy level during the
             workday?</label
           >
           <input
@@ -176,7 +187,7 @@
             type="checkbox"
             value="eye-strain"
           />
-          <label for="">Eye strain</label>
+          <label for="eye-strain">Eye strain</label>
           <input
             id="headaches"
             name="symptoms"
@@ -190,11 +201,17 @@
             type="checkbox"
             value="insomnia"
           />
-          <label for="">Insomnia</label>
-          <input id="anxiety" name="anxiety" type="checkbox" value="" />
-          <label for="">Anxiety </label>
-          <input id="none" name="none" type="checkbox" value="" checked />
-          <label for="">None</label>
+          <label for="insomnia">Insomnia</label>
+          <input id="anxiety" name="symptoms" type="checkbox" value="anxiety" />
+          <label for="anxiety">Anxiety </label>
+          <input
+            id="none"
+            name="symptoms"
+            type="checkbox"
+            value="none"
+            checked
+          />
+          <label for="none">None</label>
         </div>
 
         <div class="form-group">
@@ -209,11 +226,11 @@
 
       <!-- PREFERENCES SECTION -->
       <fieldset>
+        <legend class="preferences-feedback">Preferences & Feedback</legend>
         <p class="hint">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem, nostrum!
         </p>
-        <legend class="preferences-feedback">Preferences & Feedback</legend>
 
         <div class="form-group">
           <label for="productivity-tools"
@@ -237,7 +254,7 @@
         </div>
 
         <div class="form-group">
-          <label for="email">If yes - write your Email address here:</label>
+          <label for="email">If yes — enter your Email address here:</label>
           <input id="email" name="email" type="email" />
         </div>
 
@@ -246,7 +263,7 @@
           <textarea
             id="suggestions"
             name="suggestions"
-            placeholder="We appretiate you sharing your thoughts"
+            placeholder="We appreсiate you sharing your thoughts"
           ></textarea>
         </div>
       </fieldset>
