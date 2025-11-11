@@ -134,9 +134,27 @@ label.energy-rate,
 .button-container {
   display: flex;
   justify-content: center;
+  gap: 24px;
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #5a87a1;
   color: #110a11;
+  border: 2px solid #110a11;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #7292a4;
+}
+
+button:active {
+  background-color: #8f9fa9;
 }
