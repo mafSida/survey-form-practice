@@ -73,6 +73,7 @@ select {
   background-color: #e0b99a;
   color: #110a11;
   margin: 1em 0;
+  border-color: #5a87a1;
 }
 
 ::placeholder {
@@ -113,6 +114,20 @@ input[type="range"] {
 .form-question.screen-breaks {
   flex-basis: 100%;
 }
+
+/* WELL-BEING SECTION */
+
+.form-group.well-being {
+  flex-wrap: wrap;
+}
+
+label.energy-rate,
+.form-question.well-being {
+  flex-basis: 100%;
+  margin-top: 1em;
+}
+
+/* FEEDBACK SECTION */
 
 /* BOTTONS */
 

@@ -151,8 +151,8 @@
           This section focuses on how technology affects your energy and focus.
         </p>
 
-        <div class="form-group">
-          <label for="energy-rate"
+        <div class="form-group well-being">
+          <label class="energy-rate" for="energy-rate"
             >How whould you rate your current energy level during the
             workday?</label
           >
@@ -166,39 +166,35 @@
           />
         </div>
 
-        <div class="form-group">
-          <p class="form-question">
+        <div class="form-group well-being">
+          <p class="form-question well-being">
             Do you experience symptoms of digital fatigue?
           </p>
-          <label for="">Eye strain</label>
           <input
             id="eye-strain"
             name="symptoms"
             type="checkbox"
             value="eye-strain"
           />
-
-          <label for="headaches"></label>
+          <label for="">Eye strain</label>
           <input
             id="headaches"
             name="symptoms"
             type="checkbox"
             value="headaches"
           />
-
-          <label for="">Insomnia</label>
+          <label for="headaches">Headaches</label>
           <input
             id="insomnia"
             name="symptoms"
             type="checkbox"
             value="insomnia"
           />
-
-          <label for="">Anxiety </label>
+          <label for="">Insomnia</label>
           <input id="anxiety" name="anxiety" type="checkbox" value="" />
-
-          <label for="">None</label>
+          <label for="">Anxiety </label>
           <input id="none" name="none" type="checkbox" value="" checked />
+          <label for="">None</label>
         </div>
 
         <div class="form-group">
@@ -213,11 +209,15 @@
 
       <!-- PREFERENCES SECTION -->
       <fieldset>
+        <p class="hint">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem, nostrum!
+        </p>
         <legend class="preferences-feedback">Preferences & Feedback</legend>
 
         <div class="form-group">
           <label for="productivity-tools"
-            >Which productivity tools or apps do you use regularly</label
+            >Which productivity tools or apps do you use regularly?</label
           >
           <textarea
             id="productivity-tools"
@@ -226,11 +226,12 @@
           ></textarea>
         </div>
 
-        <div class="form-group">
+        <div class="form-group results">
+          <p class="form-question results">
+            Would you like to receive the survey results?
+          </p>
           <label for="yes">Yes</label>
           <input id="yes" name="summary" type="radio" value="yes" checked />
-        </div>
-        <div class="form-group">
           <label for="no">No</label>
           <input id="no" name="summary" type="radio" value="no" />
         </div>
